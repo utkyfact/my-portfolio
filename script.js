@@ -7,6 +7,10 @@ const savedTheme = localStorage.getItem('theme');
 // Tema değiştir
 themeToggleButton.addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
+  
+  // Tema durumunu sakla
+  const isDarkMode = document.body.classList.contains('dark-mode');
+  
   themeToggleButton.textContent = isDarkMode ? 'Light Mode' : 'Dark Mode';
 });
 
