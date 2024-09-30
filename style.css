@@ -1,0 +1,307 @@
+/* Genel ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  /* Dark Mode Ayarları */
+  .dark-mode {
+    background-color: #121212;
+    color: #f4f4f4;
+  }
+  
+  .dark-mode .navbar {
+    background-color: #1f1f1f;
+    color: #fff;
+  }
+  
+  .dark-mode .navbar ul li a {
+    color: #fff;
+  }
+  
+  .dark-mode .navbar ul li a:hover {
+    background: #333;
+  }
+  
+  .dark-mode .hero {
+    background-color: #1f1f1f;
+  }
+
+  .dark-mode .hero h2, .dark-mode .hero p {
+    color: white;
+  }
+  
+  .dark-mode .about, .dark-mode .projects, .dark-mode .contact {
+    background-color: #1f1f1f;
+    color: #f4f4f4;
+  }
+
+  .dark-mode .about p {
+    color: white;
+  }
+  
+  .dark-mode .project {
+    background-color: #333;
+  }
+
+  .dark-mode .projects h3{
+    color: white;
+  }
+  
+  .dark-mode .btn {
+    background: #f4e04d;
+    color: #333;
+  }
+  
+  .dark-mode .btn:hover {
+    background: #333;
+    color: #f4f4f4;
+  }
+  
+  .dark-mode .footer {
+    background-color: #1f1f1f;
+    color: #fff;
+  }
+  
+  .dark-mode .contact input, .dark-mode .contact textarea {
+    background-color: #333;
+    color: #f4e04d;
+  }
+  
+  .dark-mode button {
+    background: #f4e04d;
+    color: #333;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .navbar ul {
+    list-style: none;
+  }
+  
+  .navbar ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  .navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s;
+  }
+  
+  .navbar ul li a:hover {
+    background: #555;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('https://source.unsplash.com/1600x900/?nature') no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero h2 {
+    font-size: 3rem;
+    color: #333;
+  }
+  
+  .hero h2 span {
+    color: #f4e04d;
+  }
+
+  .hero img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin: 8px 0;
+  }
+
+  .hero img:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+  }
+  
+  .hero p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .btn {
+    background: #f4e04d;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #333;
+    color: #fff;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 50px 0;
+    background: #f4f4f4;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 2.5rem;
+  }
+  
+  .about p {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  /* Projects Section */
+  .projects {
+    padding: 50px 0;
+    background: #fff;
+    text-align: center;
+  }
+  
+  .projects h2 {
+    font-size: 2.5rem;
+  }
+  
+  .project-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  
+  .project {
+    background: #f4f4f4;
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
+  }
+  
+  .project h3 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  /* Contact Section */
+  .contact {
+    padding: 50px 0;
+    background: #f4f4f4;
+    text-align: center;
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact input, .contact textarea {
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: black;
+  }
+  
+  .contact button {
+    padding: 10px 20px;
+    background: #f4e04d;
+    border: none;
+    color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .contact button:hover {
+    background: #333;
+    color: #fff;
+  }
+  
+  /* Footer */
+  .footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  /* Theme Toggle Button */
+  #theme-toggle {
+    background: #f4e04d;
+    color: #333;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #theme-toggle:hover {
+    background: #333;
+    color: #fff;
+  }
+  
+  /* Kaydırma Animasyonu */
+  section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+/* Scroolbar Ayarları */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #333;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f4e04d;
+  border-radius: 10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
